@@ -11,7 +11,16 @@
 </head>
 <body>
 
-    <h1>speed check by Dileep Sumanth Yarajala</h1>
+    <h1>speed check by Dileep Sumanth Yarajalafunction newGame(){
+        mouseLocation = Math.floor(Math.random()*24)
+        catLocation = Math.floor(Math.random()*24)
+        document.getElementById("bushes").innerHTML = "Number of bushes checked is 0"
+        document.getElementById("penalty").innerHTML = "Penalty is 0"
+        for(var i=0;i<=23;i++){
+            document.getElementById(ids[i]).src="bushes.jpg"
+            
+        }
+    }</h1>
     <br>
 
     <div id="target">Time was</div>
@@ -72,7 +81,16 @@
                       document.getElementById('countdown').innerHTML=i;
                   },(rv-i)*1000);
           }
-        
+          function newGame(){
+            mouseLocation = Math.floor(Math.random()*24)
+            catLocation = Math.floor(Math.random()*24)
+            document.getElementById("bushes").innerHTML = "Number of bushes checked is 0"
+            document.getElementById("penalty").innerHTML = "Penalty is 0"
+            for(var i=0;i<=23;i++){
+                document.getElementById(ids[i]).src="bushes.jpg"
+                
+            }
+        }
         </script>
 
 </body>
