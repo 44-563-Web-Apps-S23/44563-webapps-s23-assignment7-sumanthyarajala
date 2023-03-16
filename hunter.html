@@ -13,93 +13,164 @@
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" 
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-        
+        <style>
+            p {
+               
+               background-color: rgb(196, 199, 205);
+               font-family:'Franklin Gothic Medium', 'Arial Narcol-2', Arial, sans-serif;
+               
+                 border: 2px solid rgb(57, 206, 117);
+                 padding: 2px;
+           }
+           #bushes {
+               
+               background-color: rgb(251, 255, 0);
+               font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              font-size: 110%;
+              border: 2px solid rgb(142, 152, 22);
+              padding: 4px;
+           }
+           #penalty {
+               
+               background-color: rgb(82, 0, 41);
+               font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+               font-size: 120%;
+               border: 2px solid rgb(136, 219, 227);
+              padding: 4px;
+           }
+           #help {
+               
+               background-color: rgb(138, 86, 86);
+               font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                 font-size: 130%;
+                 border: 2px solid rgb(140, 242, 255);
+                 padding: 8px;
+                
+           }
+         </style>
     </head>
+
     <body>
-        <body>
-            <h2>Find the mouse by Dileep Sumanth Yarajala</h2>
-            <p>Click on the bushes to search for the mouse, beware the cat.</p>
-            <div class="row">
-                <div id="bushes" style="background-color:rgb(216, 24, 104);">Number of bushes checked is zero</div>
-                <div id="penalty" style="background-color:rgb(15, 250, 250);">Penalty is zero.</div>
-                <div style="background-color:rgb(57, 10, 188);">Click for help.</div>
-                <div id="help" style="background-color:rgb(203, 220, 151);">Help report</div>
-            </div>
-            <div class="container">
-                <div class="d-flex">
-                <div><img  width=110 height=110 id="0" onclick="check(0)" src="smallbush.jpg"></div>
-                <div><img  width=110 height=110 id="1" onclick="check(1)" src="smallbush.jpg"></div>
-                <div><img  width=110 height=110 id="2" onclick="check(2)" src="smallbush.jpg"></div>
-                <div><img  width=110 height=110 id="3" onclick="check(3)" src="smallbush.jpg"></div>
-                <div><img  width=110 height=110 id="4" onclick="check(4)" src="smallbush.jpg"></div>
-                <div><img  width=110 height=110 id="3" onclick="check(5)" src="smallbush.jpg"></div>
-            </div>
-            </div>
-            <div class="container">
-                <div class="d-flex">
-                <div><img  width=110 height=110 id="5" onclick="check(6)" src="smallbush.jpg"></div>
-                <div><img  width=110 height=110 id="6" onclick="check(7)" src="smallbush.jpg"></div>
-                <div><img  width=110 height=110 id="7" onclick="check(8)" src="smallbush.jpg"></div>
-                <div><img  width=110 height=110 id="8" onclick="check(9)" src="smallbush.jpg"></div>
-                <div><img  width=110 height=110 id="9" onclick="check(10)" src="smallbush.jpg"></div>
-                <div><img  width=110 height=110 id="8" onclick="check(11)" src="smallbush.jpg"></div>
-            </div>
-            </div>
-            <div class="container">
-                <div class="d-flex">
-                <div><img  width=110 height=110 id="10" onclick="check(12)" src="smallbush.jpg"></div>
-                <div><img  width=110 height=110 id="11" onclick="check(13)" src="smallbush.jpg"></div>
-                <div><img  width=110 height=110 id="12" onclick="check(14)" src="smallbush.jpg"></div>
-                <div><img  width=110 height=110 id="13" onclick="check(15)" src="smallbush.jpg"></div>
-                <div><img  width=110 height=110 id="14" onclick="check(16)" src="smallbush.jpg"></div>
-                <div><img  width=110 height=110 id="13" onclick="check(17)" src="smallbush.jpg"></div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="d-flex">
-                <div><img  width=110 height=110 id="15" onclick="check(18)" src="smallbush.jpg"></div>
-                <div><img  width=110 height=110 id="16" onclick="check(19)" src="smallbush.jpg"></div>
-                <div><img  width=110 height=110 id="17" onclick="check(20)" src="smallbush.jpg"></div>
-                <div><img  width=110 height=110 id="18" onclick="check(21)" src="smallbush.jpg"></div>
-                <div><img  width=110 height=110 id="19" onclick="check(22)" src="smallbush.jpg"></div>
-                <div><img  width=110 height=110 id="18" onclick="check(23)" src="smallbush.jpg"></div>
-                </div>
-                </div>
-            </div>
-    </body>
-    <style>
-        p {
-           
-           background-color: rgb(196, 199, 205);
-           font-family:'Franklin Gothic Medium', 'Arial Narcol-2', Arial, sans-serif;
-           
-             border: 2px solid rgb(57, 206, 117);
-             padding: 2px;
-       }
-       #bushes {
-           
-           background-color: rgb(251, 255, 0);
-           font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-          font-size: 110%;
-          border: 2px solid rgb(142, 152, 22);
-          padding: 4px;
-       }
-       #penalty {
-           
-           background-color: rgb(82, 0, 41);
-           font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-           font-size: 120%;
-           border: 2px solid rgb(136, 219, 227);
-          padding: 4px;
-       }
-       #help {
-           
-           background-color: rgb(138, 86, 86);
-           font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-             font-size: 130%;
-             border: 2px solid rgb(140, 242, 255);
-             padding: 8px;
+        <h1>Find the mouse by XXXXXXX</h1>
+        <br>
+        <div class="container-fluid"> 
+        <p class="important">Click on the bushes to search for the mouse, beware the cat</p>
+        <p id = "bushes">Number of bushes checked is zero.</p>  
+        <p id = "penalty">Penalty is zero.</p>
+        <button type="button" class="btn btn-primary" onclick="help()">Click for Help</button>
+        <br>
+        <br>
+        <p id="help" onclick="help()">Help Report</p>
+        </div>
+
+<br>
+<div class="container">
+    <div class="image-row d-flex">
+        <div>
+            <img id="i0" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(0)">
+            <img id="i1" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(1)">
+            <img id="i2" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(2)">
+            <img id="i3" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(3)">
+            <img id="i4" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(4)">
+            <img id="i5" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(5)">
+        </div>
+    </div>
+    <div class="image-row d-flex">
+        <div>
+            <img id="i6" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(6)">
+            <img id="i7" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(7)">
+            <img id="i8" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(8)">
+            <img id="i9" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(9)">
+            <img id="i10" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(10)">
+            <img id="i11" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(11)">
+        </div>
+    </div>
+    <div class="image-row d-flex">
+        <div>
+            <img id="i12" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(12)">
+            <img id="i13" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(13)">
+            <img id="i14" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(14)">
+            <img id="i15" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(15)">
+            <img id="i16" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(16)">
+            <img id="i17" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(17)">
+        </div>
+    </div>
+    <div class="image-row d-flex">
+        <div>
+            <img id="i18" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(18)">
+            <img id="i19" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(19)">
+            <img id="i20" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(20)">
+            <img id="i21" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(21)">
+            <img id="i22" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(22)">
+            <img id="i23" src="bushes.jpg" alt="Bushes" height="125" width="125" onclick="check(23)">
+        </div>
+    </div>
+</div>
+<script>
+    var ids=["i0","i1","i2","i3","i4","i5","i6","i7","i8","i9","i10",
+    "i11","i12","i13","i14","i15","i16","i17","i18","i19","i20","i21","i22","i23"]
+    var checkCount = 0
+    var penalty = 0
+    var lastCheck = 0
+    var mouseLocation = 13
+    var catLocation = 21
+    let gameOver = false
+    function check(position){
+        if(gameOver){
+            return;
+        }
+        var id = ids[position]
+        img = document.getElementById(id);
+        if(position==mouseLocation){
+            img.src = "mouse.jpg";
+            gameOver = true;
+            penalty -= 3;
+
+        }
+        else if(position==catLocation){
+            img.src = "tiger.jpg";
+            gameOver = true;
+            penalty += 4;
+        }
+        else{
+            img.src = "grass.jpg";
+        }
+        checkCount++;
+        penalty++;
+
+        document.getElementById("bushes").innerHTML = "Number of bushes checked is: " +checkCount;
+        document.getElementById("penalty").innerHTML = "penalty: "+penalty;
+        lastCheck = position;
+        }
+        function help(){
+            console.log(lastCheck)
+            const catRow = Math.floor(catLocation/4);
+            const catCol = catLocation%6;
+            const mouseRow = Math.floor(mouseLocation/4);
+            const mouseCol = mouseLocation%6;
+            const lastRow = Math.floor(lastCheck/4);
+            const lastCol = lastCheck%6;
+            console.log(catRow)
+            console.log(catCol)
+            console.log(mouseRow)
+            console.log(mouseCol)
+            console.log(lastRow)
+            console.log(lastCol)
+            penalty = penalty+2;
+            document.getElementById("penalty").innerHTML = "Penalty is "+penalty;
             
-       }
-     </style>
+           if((Math.abs(catRow-lastRow)<=1 && Math.abs(catCol-lastCol)<=1)&&(Math.abs(catRow-mouseRow)>1||Math.abs(catCol-mouseCol)>1)){
+                document.getElementById("help").innerHTML= "meow";
+            }
+           
+            else if((Math.abs(mouseRow-lastRow)<=1 && Math.abs(mouseCol-lastCol)<=1)&&( Math.abs(catRow-mouseRow)>1||Math.abs(catCol-mouseCol)>1)){
+                document.getElementById("help").innerHTML="squeak";
+            }
+           else{
+            document.getElementById("help").innerHTML= "sorry, no help available";
+           }
+        }
+      
+</script>
+
 </html>
